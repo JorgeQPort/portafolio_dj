@@ -1,0 +1,11 @@
+
+<p>Are you sure?</p>
+
+<form method="POST">
+
+    {% csrf_token %}
+
+    {{form}}
+
+    <button type="submit">Eliminar publicación</button>
+</form>

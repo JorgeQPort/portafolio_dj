@@ -1,0 +1,13 @@
+Hola, Bienvenido a mi blog personal
+<br>
+
+{% for post in  posteos%}
+
+<a href=" {% url "blog:detalles" post.id %} ">{{post.title}}</a>
+<a href=" {% url "blog:actualizar" post.id %} ">Update</a>
+<a href=" {% url "blog:eliminar" post.id %} ">Delete</a>
+
+{% endfor %}
+
+<br>
+<a href="{% url "blog:crear" %}">Create</a>
